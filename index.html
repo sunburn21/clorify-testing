@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Dr.Color</title>
+
+	<meta charset="UTF-8" />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no' />
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body onload="init()">
+	<dd id="panel1">
+		<header class="pageHeader">
+			<span id="header_title">1st test</span>
+		</header>
+		<article class="content" id="landingPage">
+			<p>Enter the value as seen on image. Leave blank if you can't see anything...</p>
+		</article>
+	</dd>
+	<br />
+	<div id="table_main">
+		<input type="image" id="btn_back" src="images/btn_back.png" onClick="setPage(-1)" />
+		<img id="img_main" />
+		<input type="image" id="btn_next" src="images/btn_next.png" onClick="setPage(1)" />
+	</div>
+	<article id="result">
+		<p>Probability of total color-blindness: <span id="pt"></span>/3</p>
+		<p>Probability of red-green-blindness: <span id="prg"></span>/3</p>
+		<br />
+		<p>Possibly red-blind: <span id="pr"></span></p>
+		<p>Possibly green-blind: <span id="pg"></span></p>
+		<br />
+
+		<br />
+		<div><input class="btn_result" type="button" value="Reset" onClick="reset()" /></div>
+	</article>
+
+	<div id="input"><input id="inputans" type="number" placeholder="Enter seen value..." /></div>
+
+</body>
+
+</html>
